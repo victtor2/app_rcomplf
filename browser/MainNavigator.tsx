@@ -11,7 +11,7 @@ const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
 
 function MyStack() {
-    return <Stack.Navigator>
+    return <Stack.Navigator initialRouteName="Drawer">
       <Stack.Screen name="Login" component={LoginScreen} />
       <Stack.Screen name="Register" component={RegisterScreen} />
       <Stack.Screen name="Drawer" component={MyDrawer} />
@@ -19,7 +19,7 @@ function MyStack() {
   }
   
   function MyDrawer() {
-    return <Drawer.Navigator>
+    return <Drawer.Navigator initialRouteName="Game">
       <Drawer.Screen name="Score" component={ScoreScreen} />
       <Drawer.Screen name="Game" component={GameScreen} />
     </Drawer.Navigator>;
