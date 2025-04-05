@@ -61,7 +61,7 @@ export default function LoginScreen({navigation}: any) {
             title='login' 
             onPress={() => login()}   
         />
-        <Text onPress={()=> navigation.navigate("Register")}>Registrate aquí</Text>
+        <Text onPress={()=> navigation.navigate("Register")}>¿Tienes una cuenta? Registrate aquí</Text>
     </View>
   )
 }
